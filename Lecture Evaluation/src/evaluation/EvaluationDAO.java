@@ -18,7 +18,7 @@ public class EvaluationDAO {
 		try {
 			conn = DatabaseUtil.getConnection();
 			pstmt = conn.prepareStatement(SQL);
-			pstmt.setString(1, evaluationDTO.getUserID());
+			pstmt.setString(1, evaluationDTO.getUserID().replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\r\n", "<br>"));
 			pstmt.setString(2, evaluationDTO.getLectureName());
 			pstmt.setString(3, evaluationDTO.getProfessorName());
 			pstmt.setInt(4, evaluationDTO.getLectureYear());
