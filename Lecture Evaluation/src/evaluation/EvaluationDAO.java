@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import user.UserDTO;
 import util.DatabaseUtil;
 
 public class EvaluationDAO {
