@@ -10,7 +10,7 @@
 <meta charset="UTF-8">
 <meta name="viewprot" content="width=divice-width" initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
-
+<link rel="stylesheet" href="css/custom.css">
 <title>JSP 게시판 웹사이트</title>
 <style type="text/css">
 	a, a:hover{
